@@ -60,7 +60,7 @@ const config = {
             label: 'Learn',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/busycaesar/AI_Model_Terms',
             label: 'GitHub',
             position: 'right',
           },
