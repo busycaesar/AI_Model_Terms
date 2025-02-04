@@ -1,26 +1,14 @@
-# Docusaurus Boilerplate Code
+# AI Model Terms
 
 ## Description
 
-This is the Boilerplate Code to create a static website to publish notes, blogs etc. It uses markdown files to generate website content.
+This repository contains a curated list of AI-related keywords and terms, along with their explanations based on my understanding. These terms are collected while reading research papers and books on AI models. This resource is designed to help learners who want to deepen their understanding of AI concepts by exploring academic materials.
 
-## Tech Stack
-![Image Alt](https://skillicons.dev/icons?i=md)
+## Research Papers and Books
 
-## How it looks?
+The terms documented in this repository are derived from the following research papers and books that I have read.
 
-## Features
-
-- Converts markdown files into static website.
-
-## How to run the project?
-
-/ Start the docker container using the `docker-compose.yml` file.
-/ Initiate the interactive terminal of the docker container.
-/ Run the command, `npm run start`.
-/ The website is hosted on port 3000 from inside the container. The port 3000 of the container is mapped to port 3000 of the local machine. Hence, you can check the website from your local machine.
-/ Add files inside `docs/` directory and it will be on the website automatically.
-/ Any code change will also be stored in the `pwd` since the volume of `/website` directory inside the container is mapped to `pwd` of the local machine.
+- [DeepSeek R1](https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf)
 
 ## Author
 [Dev Shah](https://github.com/busycaesar)
