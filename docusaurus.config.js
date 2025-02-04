@@ -14,8 +14,8 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  url: 'https://busycaesar.github.io',
-  baseUrl: '/AI_Model_Terms/',
+  url: 'https://aimodelterms.shahtech.info',
+  baseUrl: '/',
 
   organizationName: 'busycaesar',
   projectName: 'AI_Model_Terms',
