@@ -47,7 +47,7 @@ const config = {
   themeConfig:
     {
       navbar: {
-        title: 'Website Title',
+        title: 'AI Model Terms',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
