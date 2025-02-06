@@ -81,3 +81,39 @@ title: AI Model Terms
 - If there is less computing power, it can still make reasonable decisions with limited simulations.
 - MCTS can split the search tree across multiple processors, enabling parallel execution.
 - This means that AI models using MCTS can handle more users at once without major slowdowns.
+## Beam Search
+- Beam Search is an algorithm used in AI models to generate better and more accurate text predictions.
+- Instead of pickling the mostly likely next word, it explores multiple possible word sequences and chooses the best one.
+- A greedy algorithm picks the most likely next word based only on the current word. While this may be meaningful in the short term, it can lead to sentences that don’t make sense in the long run. However, Beam Search keeps track of multiple possible word sequences and selects the most likely full sentence, rather than just focusing on the next word.
+- Example: If the model predicts the next word for "I am going to the...", it might consider:
+	- "store" (high probability)
+	- "park" (medium probability)
+	- "beach" (low probability)
+- The model predicts that the word has high probability based on how often certain words follow a given phrase in the training data.
+## Proximal Policy Optimization (PPO) and Generalized Reinforcement Learning with Proximal Optimizer (GRPO)
+- Both of these are types of Reinforcement Learning.
+- Following is the explanation of both of these referring to a chess game.
+### PPO
+- There are two elements in PPO: AI Agent (who is learning) and a Critic.
+- The AI Agent has an initial policy based on which it takes the decision.
+**Steps:**
+1. Out of all the possible moves, AI Agent picks one move, based on the policy and executes the move.
+2. The Critic then provides a feedback (Good/Bad) on the move taken by the agent.
+3. Based on the feedback, the agent updates the policy. However, it does not make a drastic change in the policy; just a minimal change.
+4. These steps are repeated until the agent learns properly.
+- PPO explores each step one by one.
+- Since PPO requires a critic, it needs more storage.
+### GRPO
+- GRPO does not have a critic.
+- The AI Agent has an initial policy based on which it takes the decision.
+**Steps:**
+1. The agent groups all the possible actions.
+	**Group of actions:**
+	- Action 1: Move the bishop (left/right)
+	- Action 2: Move the queen (somewhere)
+2. The agent evaluates all the actions in the group at the same time and based on the policy, chooses the best action that can be taken.
+3. For eg, if the agent chooses Action 1, the next thing to decide is weather to move the bishop to left or right. Again based on the policy, the agent will take this decision.
+4. According to the decision taken by the agent, the environment (in our case, the changed state of the chess board) gives a feedback to the agent if the action was good or not.
+5. Finally, based on the feedback of the environment, the agent updates the policy.
+
+![ppovsgrpo](./images/ppovsgrpo.jpeg)
