@@ -7,22 +7,19 @@ title: AI Model Terms
 ## Large Scale Reinforcement Learning
 - Reinforcement learning is a type of learning that models do by trial and error.
 - It helps model improve over time, based on feedback.
+- Reinforcement Learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent takes actions, receives rewards or penalties as feedback, and improves its behavior over time through trial and error to maximize cumulative rewards.
 - "Large Scale" refers that the reinforcement learning of the model, happened at a large scale, as the name suggests.
-
 ## Supervised Fine-Tuning
 - Before pushing the model to learn on its own, it is first taught using examples and correct answers.
-
 ## Artificial General Intelligence
 - Artificial General Intelligence is a type of AI that can think, learn and understand things, just like a human.
 - Today's AI can be referred as Narrow AI that can do specific things well, liking answering questions, self-driving cars etc. but cannot learn completely new things by itself or think like humans.
 - If you teach AGI a new subject like physics or cooking, it can learn by itself and can apply that knowledge just like a person.
 - A chess-playing AI today is amazing at chess but **useless** at driving a car.
 - An AGI would be able to learn chess, driving, painting, programming, and more—just like a human can.
-
 ## Full-Training Pipeline
 - As the name suggest, a training pipeline is a step by step process of training an entire model.
 - It starts from raw data and ends into a working AI model.
-
 ### Key Steps
 1. Data Collection
 2. Data Processing: Clean, Organize, and Format the data so that AI can understand it.
@@ -31,7 +28,6 @@ title: AI Model Terms
 5. Reinforcement Learning (Optional): Give the AI feedback (rewards or penalties) to refine its responses.
 6. Evaluation and Testing: Check if the AI is performing well and fix any mistakes.
 7. Deployment: Make the AI available for the real world.
-
 ## Post-Training
 - As the name suggests, it is the training that happens after the main training of the AI model.
 - It includes an extra step to make sure that the model is more accurate, useful and safe for the real world applications.
@@ -91,7 +87,7 @@ title: AI Model Terms
 	- "beach" (low probability)
 - The model predicts that the word has high probability based on how often certain words follow a given phrase in the training data.
 ## Proximal Policy Optimization (PPO) and Generalized Reinforcement Learning with Proximal Optimizer (GRPO)
-- Both of these are types of Reinforcement Learning.
+- Both of these are Reinforcement Learning algorithms.
 - Following is the explanation of both of these referring to a chess game.
 ### PPO
 - There are two elements in PPO: AI Agent (who is learning) and a Critic.
@@ -117,3 +113,8 @@ title: AI Model Terms
 5. Finally, based on the feedback of the environment, the agent updates the policy.
 
 ![ppovsgrpo](./images/ppovsgrpo.jpeg)
+## Rejection Sampling
+- As the name suggests, its a technique to filter out bad or low quality outputs to only keep the best ones.
+- It is used in machine learning to improve the model by only selecting the high qality answers.
+## Supervised Training Data
+Supervised training data consists of input-output pairs where the correct answer is already known. The model learns by mapping the inputs to the correct outputs.
