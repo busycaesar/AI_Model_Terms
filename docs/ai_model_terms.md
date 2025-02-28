@@ -118,3 +118,16 @@ title: AI Model Terms
 - It is used in machine learning to improve the model by only selecting the high qality answers.
 ## Supervised Training Data
 Supervised training data consists of input-output pairs where the correct answer is already known. The model learns by mapping the inputs to the correct outputs.
+## Distillation
+- As the name suggest, distillation is the process of making a distilled and light weight version of larger AI model, that works as good as the large model.
+## Parameters
+- It is common to specify the number of parameters along with the model name (e.g., "the distilled version of DeepSeek-R1 with 32B parameters"). This helps indicate the model's capacity.
+- Technically, a parameter is a value in the model that gets updated during training based on the data. These values (parameters) help the model learn how to make predictions or decisions based on the input features.
+- Example for clarification: Suppose the model is learning to estimate house prices. The model considers several features (specifications) such as:
+    - Size of the house
+    - Number of bedrooms
+    - Whether the house has a garage
+    - Location (e.g., near a subway station, grocery stores, low crime rates)
+- Each of these features may have different importance. For example, being in an area with low crime might be more important for predicting the house price than having grocery stores nearby. The importance of each feature is represented by weights, and these weights are the parameters in the model.
+- More parameters in a model means it can potentially learn more complex relationships in the data, making it more capable at handling difficult tasks. However, it also requires more computational resources to process and more memory to store these parameters.
+- In general, models with more parameters can handle more complex tasks, but this also means greater computational cost (both in terms of processing power and memory) during both training and inference.
