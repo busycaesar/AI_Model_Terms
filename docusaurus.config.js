@@ -50,7 +50,7 @@ const config = {
         title: 'AI Model Terms',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'https://github.com/busycaesar/busycaesar/blob/Master/assets/shahtech-logo.png',
         },
         items: [
           {
