@@ -131,3 +131,14 @@ Supervised training data consists of input-output pairs where the correct answer
 - Each of these features may have different importance. For example, being in an area with low crime might be more important for predicting the house price than having grocery stores nearby. The importance of each feature is represented by weights, and these weights are the parameters in the model.
 - More parameters in a model means it can potentially learn more complex relationships in the data, making it more capable at handling difficult tasks. However, it also requires more computational resources to process and more memory to store these parameters.
 - In general, models with more parameters can handle more complex tasks, but this also means greater computational cost (both in terms of processing power and memory) during both training and inference.
+## Semantic Search
+- It is a way for computers to understand the context behind the query and not just what you type, unlike traditional keyword based search.
+**Example**
+When someone searches for Apple, 
+- Keyword Search: Shows results for the word 'apple', including Apple Inc.
+- Semantic Search: Understands your intend. If the user have been search for fruits, it shows the results related to Apple the fruit, not the company.
+### How it works?
+1. **Natural Language Processing (NLP)**: Helps computers understand human language.
+2. **Work Embeddings (Vector Representations)**: Converts words into numbers based on their meaning.
+3. **Knowledge Graphs:** Stores relationships between entities (e.g., Apple is related to "fruit," "healthy food," and "orchards").
+4. **Machine Learning & Deep Learning:** Helps the system improve over time by learning from past searches.

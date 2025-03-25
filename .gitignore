@@ -1,7 +1,7 @@
 research_questions.txt
 
 # Note taking software
-*/.obsidian
+.obsidian/
 
 # Dependencies
 /node_modules
